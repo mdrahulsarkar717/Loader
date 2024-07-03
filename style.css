@@ -1,0 +1,28 @@
+body {
+    background: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 10px solid #A8ACD6;
+    border-radius: 50%;
+    border-top: 10px dashed #2B2B33;
+    transition: 1s;
+    animation:loader ease-in  1s infinite;
+}
+@keyframes loader{
+    transform{
+        transform: translate(0deg);
+    }
+    transition{
+        transform:translate(360deg);
+    }
+}
